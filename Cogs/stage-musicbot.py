@@ -19,7 +19,7 @@ class StargeChannelMusicbot(commands.Cog):
         stagechannel = await stage_channel.connect()
         #await self.bot.get_guild(self.guild_id).me.edit(suppress = False)
         #await self.bot.get_guild(self.guild_id).me.request_to_speak()
-        stagechannel.play(discord.FFmpegPCMAudio(source="firesound.mp3"))
+        stagechannel.play(discord.FFmpegPCMAudio(executable="", source="/tmp/firesound.mp3"))
 
 
 def setup(bot):
